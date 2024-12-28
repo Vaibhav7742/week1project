@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AI Web Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center text-blue-500">AI-Powered Web Application</h1>
+    <p class="text-lg text-center mt-4">Interact with our AI-powered chatbot below.</p>
+    <div class="mt-8 flex justify-center">
+      <div class="w-full max-w-lg p-4 bg-white border border-gray-300 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold text-center">Chatbot</h2>
+        <div id="chatbox" class="h-60 overflow-y-auto border-2 p-4 bg-gray-50 mt-4 rounded-lg mb-4"></div>
+        <input type="text" id="userInput" class="w-full p-2 border-2 border-gray-300 rounded-md" placeholder="Type your message..." />
+        <button id="sendBtn" class="w-full bg-blue-500 text-white p-2 mt-2 rounded-md">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linking to the external JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
